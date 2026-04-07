@@ -2,3 +2,20 @@ services:
   event-handler:
     ports:
       - "8088:80"
+    networks:
+      - default
+      - n8n_default
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=n8n_default
+      - traefik.http.routers.popebot.entrypoints=web,websecure
+      - traefik.http.routers.popebot.rule=Host(`infinitebarrz.cloud`)
+      - traefik.http.routers.popebot.service=popebot
+      - traefik.http.routers.popebot.tls=true
+      - traefik.http.routers.popebot.tls.certresolver=mytlschallenge
+      - traefik.http.routers.event-handler.service=event-handler
+      - traefik.http.services.popebot.loadbalancer.server.port=80
+
+networks:
+  n8n_default:
+    external: true
