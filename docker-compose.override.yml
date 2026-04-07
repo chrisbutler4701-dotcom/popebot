@@ -1,0 +1,4 @@
+services:
+  event-handler:
+    ports:
+      - "8088:80"

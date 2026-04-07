@@ -32,4 +32,4 @@ Some files are auto-synced by `npx thepopebot init` and will be overwritten on u
 
 ## Agents
 
-(No agents configured yet.)
+- **`builderbrain-verifier`** — Weekly verification + durable writeback agent for `builder_brain_system_source_of_truth`.

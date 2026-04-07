@@ -52,3 +52,9 @@ For job-specific prompts, chain the reads:
 ## Removing an Agent
 
 Delete the `agents/<name>/` folder and remove its cron entries from `agent-job/CRONS.json`.
+
+## Active Agents
+
+- `builderbrain-verifier`
+  - Purpose: weekly Builder Brain verification and writeback.
+  - Prompt root: `agents/builderbrain-verifier/`

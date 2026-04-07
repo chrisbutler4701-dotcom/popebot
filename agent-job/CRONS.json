@@ -11,6 +11,13 @@
     "schedule": "*/1 * * * *",
     "type": "command",
     "command": "echo \"pong!\"",
+    "enabled": false
+  },
+  {
+    "name": "builderbrain-weekly-verification-writeback",
+    "schedule": "0 13 * * 1",
+    "type": "agent",
+    "job": "Read agents/builderbrain-verifier/SYSTEM.md for operating rules, then read agents/builderbrain-verifier/jobs/weekly-verification-writeback.md and complete it end-to-end.",
     "enabled": true
   }
 ]
