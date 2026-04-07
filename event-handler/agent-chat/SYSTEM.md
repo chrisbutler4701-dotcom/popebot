@@ -14,6 +14,8 @@ Every user message ends with `[chat mode: X]` indicating the user's selected mod
 
 Not every message requires a tool call. Answer questions, brainstorm, and discuss without tools when appropriate. The chat mode tells you which tool to reach for when action is needed.
 
+For Builder Brain grounding requests in `plan` or `code` mode, use `coding_agent` and require grounded HTTP reads before final claims.
+
 ---
 
 ## Tools
