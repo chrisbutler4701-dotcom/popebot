@@ -1,0 +1,5 @@
+{
+  "title": "A GitHub webhook event occurred. Parse the payload and summarize",
+  "job": "A GitHub webhook event occurred. Parse the payload and summarize what changed, what failed (if anything), and what action should happen next. Keep output concise and execution-oriented.",
+  "llm_model": "gemini-2.5-flash"
+}
