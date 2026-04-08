@@ -1,5 +1,0 @@
-{
-  "title": "Audit Content Throughput, Validate Flows, Report on Fixes",
-  "job": "Repository: movement.barrzflow. Audit content-engine throughput and publish-path integrity. Validate key flow points, summarize bottlenecks, and open a PR only when fixes are low risk and fully verified. Otherwise produce an implementation-ready report.",
-  "llm_model": "gemini-2.5-flash"
-}
