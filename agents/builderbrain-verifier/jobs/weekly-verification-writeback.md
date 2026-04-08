@@ -8,8 +8,10 @@ Execute a weekly verification sweep for Builder Brain system health and write re
 
 1. Load canonical state:
    - Use `BASE_URL="${BUILDER_BRAIN_BASE_URL:-${AGENT_BUILDER_BRAIN_BASE_URL:-http://172.17.0.1:8001}}"` (fallback `http://127.0.0.1:8001`).
-   - Use `SECRET="${BUILDER_BRAIN_SHARED_SECRET:-${AGENT_BUILDER_BRAIN_SHARED_SECRET:-}}"`.
-   - If `SECRET` is empty, stop and report: `Builder Brain secret is not configured in environment`.
+   - Resolve the shared secret in this order:
+     - `SECRET="${BUILDER_BRAIN_SHARED_SECRET:-${AGENT_BUILDER_BRAIN_SHARED_SECRET:-${BUILDER_BRAIN:-}}}"`
+     - If `SECRET` is still empty and `skills/library/agent-job-secrets/agent-job-secrets.js` exists, run `node skills/library/agent-job-secrets/agent-job-secrets.js get BUILDER_BRAIN` and use its stdout as `SECRET`.
+   - If `SECRET` is still empty, stop and report: `Builder Brain secret is not configured in environment`.
    - `curl -fsS -H "x-openclaw-shared-secret: ...secret..." "$BASE_URL/api/projects/builder_brain_system_source_of_truth"`
    - `curl -fsS -X POST "$BASE_URL/api/tools/retrieve_context" -H "Content-Type: application/json" -H "x-openclaw-shared-secret: ...secret..." -d '{"message":"weekly verification targets and known risks for builder_brain_system_source_of_truth","user_id":"popebot","session_id":"weekly-verifier","project_key":"builder_brain_system_source_of_truth","answer":true}'`
 2. Verify live endpoints:

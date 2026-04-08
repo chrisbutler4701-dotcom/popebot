@@ -33,3 +33,5 @@ Some files are auto-synced by `npx thepopebot init` and will be overwritten on u
 ## Agents
 
 - **`builderbrain-verifier`** — Weekly verification + durable writeback agent for `builder_brain_system_source_of_truth`.
+- **`codex-postfix-test`** — Daily Codex CLI report job that writes a 3-finding smoke-test markdown report to `logs/strategy/codex-postfix-test.md`.
+- **`gemini-postfix-test`** — Daily Gemini CLI report job that writes a 3-finding smoke-test markdown report to `logs/strategy/gemini-postfix-test.md`.

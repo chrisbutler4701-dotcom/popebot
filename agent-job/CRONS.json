@@ -19,5 +19,19 @@
     "type": "agent",
     "job": "Read agents/builderbrain-verifier/SYSTEM.md for operating rules, then read agents/builderbrain-verifier/jobs/weekly-verification-writeback.md and complete it end-to-end.",
     "enabled": true
+  },
+  {
+    "name": "codex-postfix-test",
+    "schedule": "0 9 * * *",
+    "type": "command",
+    "command": "mkdir -p logs/strategy && cat agents/codex-postfix-test/SYSTEM.md agents/codex-postfix-test/jobs/generate-report.md | codex exec --ephemeral --color never --dangerously-bypass-approvals-and-sandbox -C /home/coding-agent/workspace -o /home/coding-agent/workspace/logs/strategy/codex-postfix-test.md -",
+    "enabled": true
+  },
+  {
+    "name": "gemini-postfix-test",
+    "schedule": "5 9 * * *",
+    "type": "command",
+    "command": "mkdir -p logs/strategy /home/coding-agent/workspace/.tmp && cat agents/gemini-postfix-test/SYSTEM.md agents/gemini-postfix-test/jobs/generate-report.md | npx -y @google/gemini-cli --prompt \"Follow the instructions provided on stdin, use the current repository as context, and output only the final markdown report.\" --yolo > /home/coding-agent/workspace/.tmp/gemini-postfix-test.md && mv /home/coding-agent/workspace/.tmp/gemini-postfix-test.md /home/coding-agent/workspace/logs/strategy/gemini-postfix-test.md",
+    "enabled": true
   }
 ]

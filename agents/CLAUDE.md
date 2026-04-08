@@ -58,3 +58,9 @@ Delete the `agents/<name>/` folder and remove its cron entries from `agent-job/C
 - `builderbrain-verifier`
   - Purpose: weekly Builder Brain verification and writeback.
   - Prompt root: `agents/builderbrain-verifier/`
+- `codex-postfix-test`
+  - Purpose: generate a small Codex CLI strategy report with exactly 3 findings.
+  - Prompt root: `agents/codex-postfix-test/`
+- `gemini-postfix-test`
+  - Purpose: generate a small Gemini CLI strategy report with exactly 3 findings.
+  - Prompt root: `agents/gemini-postfix-test/`
