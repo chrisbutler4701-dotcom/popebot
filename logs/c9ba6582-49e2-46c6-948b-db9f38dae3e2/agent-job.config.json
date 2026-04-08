@@ -1,0 +1,4 @@
+{
+  "title": "Execute Grounded Operations and Context Retrieval for Agent Zero",
+  "job": "Run grounded operations for Agent Zero with the configured Builder Brain settings, allowing it to perform list_projects and retrieve_context to ground itself properly."
+}
