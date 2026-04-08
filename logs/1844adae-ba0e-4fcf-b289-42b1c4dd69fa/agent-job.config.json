@@ -1,0 +1,5 @@
+{
+  "title": "Validate booking and intake processes with testing and PR proposals",
+  "job": "Repository: loyalty-cleaning-pwa. Validate booking flow, quote intake, and hiring intake continuity. Check for regressions and error-handling weaknesses. Propose/fix issues with tests and open a PR.",
+  "llm_model": "gpt-5.4"
+}
