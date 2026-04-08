@@ -1,5 +1,0 @@
-{
-  "title": "Conduct Reliability Checks and Implement Fixes for Access and Webhooks",
-  "job": "Repository: carebridge-mobile-office. Run deterministic reliability checks for auth, admin access guards, webhook intake paths, and deployment health assumptions. If failures are reproducible, implement minimal safe fixes, run verification, and open a PR with concise evidence.",
-  "llm_model": "gpt-5.4"
-}
