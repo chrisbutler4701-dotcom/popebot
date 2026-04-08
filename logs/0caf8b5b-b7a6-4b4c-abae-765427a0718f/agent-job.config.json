@@ -1,0 +1,6 @@
+{
+  "title": "Create /logs/strategy/manual-ai-trends-2026-04-08-0306.md. Produce a strategic AI trend brief for this",
+  "job": "Create /logs/strategy/manual-ai-trends-2026-04-08-0306.md. Produce a strategic AI trend brief for this business portfolio. Include top 5 trend signals, competitor implications, consumer pain-point opportunities, and a 30/60/90 execution plan.",
+  "llm_model": "gpt-5.4",
+  "agent_backend": "codex-cli"
+}
