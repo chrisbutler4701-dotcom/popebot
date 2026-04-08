@@ -1,5 +1,0 @@
-{
-  "title": "Gemini CLI smoke: create logs/e2e-smoke/GEMINI.md with line gemini-cli-ok and UTC",
-  "job": "Gemini CLI smoke: create logs/e2e-smoke/GEMINI.md with line gemini-cli-ok and UTC timestamp, then commit and open PR.",
-  "agent_backend": "gemini-cli"
-}
