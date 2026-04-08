@@ -1,0 +1,5 @@
+{
+  "title": "E2E smoke test v3: create logs/e2e-smoke/RESULT-3.md containing current UTC timestamp",
+  "job": "E2E smoke test v3: create logs/e2e-smoke/RESULT-3.md containing current UTC timestamp and text e2e-ok-v3; commit changes and open a pull request against main.",
+  "agent_backend": "claude-code"
+}
