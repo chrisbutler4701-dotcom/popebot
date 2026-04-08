@@ -1,0 +1,4 @@
+{
+  "title": "Execute script to push updates to GitHub repository and log details.",
+  "job": "Run the following command in the VPS runtime shell:\n\n```bash\ncd /root/popebot_runtime/builder_brain_system_copy && /root/popebot_runtime/scripts/push_fallback_to_github.sh\n```\nAfter running this command, report the following:\n1) `git remote -v`\n2) `git log --oneline -n 1`\n3) the last 20 lines of `/root/popebot_runtime/logs/github_backup.log`."
+}
