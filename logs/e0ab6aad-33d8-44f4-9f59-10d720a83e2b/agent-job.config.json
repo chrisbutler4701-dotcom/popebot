@@ -1,0 +1,5 @@
+{
+  "title": "Execute scenario checks and manage flow failures in repository",
+  "job": "Repository: traffic-driver-ce. Execute deterministic scenario checks for draft -> promo -> video -> publish flow. Capture failures with root-cause notes. If safe, patch and open a PR; if risky, provide a rollback-safe action plan.",
+  "llm_model": "claude-sonnet-4-6"
+}
