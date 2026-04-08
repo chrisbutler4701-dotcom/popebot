@@ -1,0 +1,5 @@
+{
+  "title": "Identify and Mitigate Customer Pain Points Across Business Lines",
+  "job": "Create /logs/strategy/consumer-pain-points-$(date +%F).md. Identify top customer pain points by business line (care operations, dance/fitness creators, cleaning services, traffic/conversion automation). Propose product, service, and automation updates that reduce friction and increase conversion.",
+  "llm_model": "gpt-5.4"
+}
