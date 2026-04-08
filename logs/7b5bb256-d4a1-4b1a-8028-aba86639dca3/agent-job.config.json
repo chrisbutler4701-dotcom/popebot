@@ -1,5 +1,0 @@
-{
-  "title": "Codex CLI smoke: create logs/e2e-smoke/CODEX.md with line codex-cli-ok and UTC",
-  "job": "Codex CLI smoke: create logs/e2e-smoke/CODEX.md with line codex-cli-ok and UTC timestamp, then commit and open PR.",
-  "agent_backend": "codex-cli"
-}
