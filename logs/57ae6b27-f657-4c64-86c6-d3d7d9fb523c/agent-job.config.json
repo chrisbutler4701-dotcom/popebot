@@ -1,0 +1,4 @@
+{
+  "title": "Agent Zero: Role, Capabilities, and System Context Overview",
+  "job": "Use the shared secret available in the jobs agent to query the Builder Brain API for detailed information about Agent Zero, including its role, capabilities, and any relevant context within the system."
+}
